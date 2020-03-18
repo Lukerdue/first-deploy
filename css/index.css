@@ -194,9 +194,46 @@ h1 {
 .meat .left {
   width: 45%;
 }
+.meat .left .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.meat .left .about {
+  margin-bottom: 6%;
+}
 .meat .left .work {
-  margin: 3%;
+  border-bottom: 1px dotted gray;
+  width: 85%;
+  text-align: center;
+}
+.meat .left h3 {
+  width: 100%;
+}
+.meat .left .res-pic {
+  height: 50vh;
+  width: 30vw;
+  background-image: url('../img/res-pic.jpg');
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: 15% -15%;
+  background-attachment: fixed;
+  border-radius: 10%;
 }
 .meat .right {
   width: 45%;
+}
+.meat h3 {
+  border-bottom: 3px solid #c673ab;
+  margin: 2%;
+  padding: 3%;
+}
+.meat h4 {
+  font-family: 'Abel', sans-serif;
+}
+@media (max-width: 800px) {
+  .meat .respic {
+    display: none;
+  }
 }

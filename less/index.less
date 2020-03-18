@@ -57,6 +57,11 @@ html, body {
     height: 100%;
 }
 @color: #c673ab;
+.borderbottom(){
+	border-bottom: 3px solid @color;
+	margin: 2%;
+	padding: 3%;
+}
 // MY CSS STARTS HERE------
 //GENERAL STYLES-----------
 body{
@@ -93,9 +98,7 @@ header{
 		width: 45%;
 	}
 	.info{
-		border-bottom: 3px solid @color;
-		margin: 2%;
-		padding: 3%;
+		.borderbottom();
 	}
 	.socials{
 		display: flex;
@@ -124,11 +127,46 @@ h1{
 	justify-content: space-between;
 	.left{
 		width: 45%;
-		.work{
-			margin: 3%;
+		.experience{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
 		}
-	}
+		.about{
+			margin-bottom: 6%;
+		}
+		.work{
+			border-bottom: 1px dotted gray;
+			width: 85%;
+			text-align: center;
+		}
+		h3{
+			width: 100%;
+		}
+		.res-pic{
+			height: 50vh;
+			width: 30vw;
+			background-image: url('../img/res-pic.jpg');
+			background-repeat: no-repeat;
+			background-size: 50% auto;
+			background-position:15% -15%;
+			background-attachment: fixed;
+			border-radius: 10%;
+			}
+	}//Closes left
 	.right{
 		width: 45%;
+	}
+	h3{
+		.borderbottom();
+	}
+	h4{
+		font-family: 'Abel', sans-serif;
+	}
+}
+@media (max-width: 800px){
+	.meat .respic{
+		display: none;
 	}
 }
