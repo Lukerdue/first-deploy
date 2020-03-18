@@ -150,6 +150,10 @@ p {
   line-height: 2;
   font-size: 1rem;
 }
+h3 {
+  font-family: 'Arvo', serif;
+  font-size: 2rem;
+}
 header {
   display: flex;
   flex-direction: wrap;
@@ -179,6 +183,20 @@ header h2 {
 }
 h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 8rem;
+  font-size: 7rem;
   max-width: 50%;
+}
+.meat {
+  margin: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.meat .left {
+  width: 45%;
+}
+.meat .left .work {
+  margin: 3%;
+}
+.meat .right {
+  width: 45%;
 }
