@@ -273,7 +273,8 @@ h1 {
   .meat .left .res-pic {
     display: none;
   }
-  .meat div {
+  .meat .right,
+  .meat .left {
     width: 90%;
   }
 }
