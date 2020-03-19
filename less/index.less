@@ -56,13 +56,18 @@ table {
 html, body {
     height: 100%;
 }
+//Variables and Mix0-ins-----------------
 @color: #c673ab;
 .borderbottom(){
 	border-bottom: 3px solid @color;
 	margin: 2%;
 	padding: 3%;
 }
-// MY CSS STARTS HERE------
+.mobile(){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 //GENERAL STYLES-----------
 body{
 	background-image: url('../img/background.jpg');
@@ -74,7 +79,14 @@ body{
 	padding: 5%;
 	margin: 8%;
 	border-radius: 8%;
-
+	
+	@media (max-width: 500px){
+		#container{
+		padding: 3%;
+		margin: 0 5%;
+		border-radius: 0;
+		}
+	}
 }
 p{
 	font-family: 'Abel', sans-serif;
@@ -84,6 +96,19 @@ p{
 h3{
 	font-family: 'Arvo', serif;
 	font-size: 2rem;
+}
+//Nav style----------------
+nav{
+	margin: 3%;
+	background: #FFFFFF;
+	a{
+		text-decoration: none;
+		padding: 4%;
+		color: gray;	
+	&:hover{
+		color: @color;
+	}
+	}
 }
 
 // 	HEADER STYLES----------
@@ -113,18 +138,26 @@ header{
 		font-family: 'Arvo', serif;
 		font-size: 2rem;
 	}
+	@media (max-width: 500px){
+		.mobile();
+		flex-wrap: nowrap;
+	}
 }//Closes Header
 h1{
 	font-family: 'Pacifico', cursive;
 	font-size: 7rem;
 	max-width: 50%;
-}
+	@media (max-width: 500px){
+		font-size: 4rem;
+	}
+}//closes h1
 
 // MEAT STYLE------------------------
 .meat{
 	margin: 3%;
 	display: flex;
 	justify-content: space-between;
+	
 	.left{
 		width: 45%;
 		.experience{
@@ -164,9 +197,13 @@ h1{
 	h4{
 		font-family: 'Abel', sans-serif;
 	}
-}
-@media (max-width: 800px){
-	.meat .respic{
-		display: none;
-	}
+	@media(max-width: 500px){
+		.mobile();
+		.left .res-pic{
+			display: none;
+		}
+		div{
+			width: 90%;
+		}
+	}//closes media
 }
