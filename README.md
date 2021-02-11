@@ -1,3 +1,15 @@
+***
+This project was a resmue site I made as a project with Lambda school. The project was to create a personal site useing less, and HTML.
+I later used this project as a test-deployment through Vercel, wich you can see here -> https://first-personal-site-g8l81zytl.vercel.app/
+
+I'm quite proud of it's design, as I'm not the beset designer in the world and this one is cute ^-^
+
+This was the first website I made that was deployable (to some extent) and was also the first project I designed, created, and coded by myself early 2020.
+***
+
+
+-----Lambda's original read-me below--------------
+
 # Preprocessing I: Digital Resume
 
 For this project you will be building a digital resume from scratch. You will be required to use specific preprocessing skills to accomplish your tasks.  
