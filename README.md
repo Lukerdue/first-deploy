@@ -8,7 +8,7 @@ This was the first website I made that was deployable (to some extent) and was a
 ***
 
 
------Lambda's original read-me below--------------
+Lambda's original read-me below***
 
 # Preprocessing I: Digital Resume
 
