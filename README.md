@@ -5,10 +5,9 @@ I later used this project as a test-deployment through Vercel, wich you can see 
 I'm quite proud of it's design, as I'm not the beset designer in the world and this one is cute ^-^
 
 This was the first website I made that was deployable (to some extent) and was also the first project I designed, created, and coded by myself early 2020.
-***
+Lambda's original read-me is below for reference
 
-
-Lambda's original read-me below***
+**
 
 # Preprocessing I: Digital Resume
 
