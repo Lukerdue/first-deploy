@@ -80,7 +80,7 @@ body{
 	margin: 8%;
 	border-radius: 8%;
 	
-	@media (max-width: 500px){
+	@media (max-width: 650px){
 		padding: 3%;
 		margin: 0 5%;
 		border-radius: 0;
@@ -107,6 +107,10 @@ nav{
 		color: @color;
 	}//hover
 	}// closes a
+	@media (max-width: 650px){
+		display: flex;
+		justify-content:space-around;
+	}
 	@media (max-width: 500px){
 		display: flex;
 		justify-content: space-evenly;
@@ -143,22 +147,31 @@ header{
 h1{
 	font-family: 'Pacifico', cursive;
 	font-size: 7rem;
-	max-width: 50%;
-	}	
-	@media (max-width: 500px){
+	width: 35%;
+	}
+
+	@media (max-width: 900px){
 		h1{
-	font-size: 4rem;
-	max-width: 100%;
+		font-size: 5.25rem;
+		max-width: 25%
+		}
+		.contact{
+			max-width: 35%;
+		}
+	}//closes tablet
+	@media (max-width: 650px){
+		h1{
+			font-size: 3rem;
+			width: 100%;
+		}
+		.contact{
+			width: 100%;
 		}
 		.mobile();
-		flex-wrap: nowrap;
-		.contact{
-			max-width: 100%;
-		}
 
-	}
-}
-
+			
+		}//closes mobile
+}//header
 // MEAT STYLE------------------------
 .meat{
 	margin: 3%;
@@ -193,6 +206,9 @@ h1{
 			background-position:15% -15%;
 			background-attachment: fixed;
 			border-radius: 10%;
+			img{
+				display: none;
+			}
 			}
 	}//Closes left
 	.right{
@@ -203,6 +219,11 @@ h1{
 	}
 	h4{
 		font-family: 'Abel', sans-serif;
+	}
+	@media (max-width:1000px){
+		.res-pic{
+			display: none;
+		}
 	}
 	@media(max-width: 500px){
 		.mobile();

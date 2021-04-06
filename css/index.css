@@ -145,7 +145,7 @@ body {
   margin: 8%;
   border-radius: 8%;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .container {
     padding: 3%;
     margin: 0 5%;
@@ -172,6 +172,12 @@ nav a {
 }
 nav a:hover {
   color: #c673ab;
+}
+@media (max-width: 650px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 @media (max-width: 500px) {
   nav {
@@ -209,21 +215,29 @@ header h2 {
 header h1 {
   font-family: 'Pacifico', cursive;
   font-size: 7rem;
-  max-width: 50%;
+  width: 35%;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 5.25rem;
+    max-width: 25%;
+  }
+  header .contact {
+    max-width: 35%;
+  }
+}
+@media (max-width: 650px) {
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
   }
   header h1 {
-    font-size: 4rem;
-    max-width: 100%;
+    font-size: 3rem;
+    width: 100%;
   }
   header .contact {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .meat {
@@ -261,6 +275,9 @@ header h1 {
   background-attachment: fixed;
   border-radius: 10%;
 }
+.meat .left .res-pic img {
+  display: none;
+}
 .meat .right {
   width: 45%;
 }
@@ -271,6 +288,11 @@ header h1 {
 }
 .meat h4 {
   font-family: 'Abel', sans-serif;
+}
+@media (max-width: 1000px) {
+  .meat .res-pic {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .meat {
